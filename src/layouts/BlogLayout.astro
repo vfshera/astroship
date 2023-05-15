@@ -1,7 +1,6 @@
 ---
 import Container from "@components/container.astro";
 import { getFormattedDate } from "@utils/all";
-import { log } from "astro/dist/core/logger/core";
 import Layout from "./Layout.astro";
 
 const { frontmatter } = Astro.props;
@@ -14,7 +13,8 @@ const { frontmatter } = Astro.props;
         {frontmatter.category}
       </span>
       <h1
-        class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
+        class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight"
+      >
         {frontmatter.title}
       </h1>
       <div class="flex gap-2 mt-3 items-center flex-wrap md:flex-nowrap">

@@ -1,18 +1,20 @@
 ---
+import { changeLanguage } from "i18next";
 import { getCollection } from "astro:content";
 import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 
+changeLanguage("en");
+
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
+    return !data.draft && data.publishDate < new Date();
 });
-
 // Sort content entries by publication date
 publishedBlogEntries.sort(function (a, b) {
-  return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+    return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
 ---
 

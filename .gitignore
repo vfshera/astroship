@@ -3,6 +3,9 @@ dist/
 .output/
 .astro
 
+
+src/pages/de/
+src/pages/fr/
 # dependencies
 node_modules/
 

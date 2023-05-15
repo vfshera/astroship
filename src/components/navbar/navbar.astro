@@ -3,6 +3,8 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { LanguageSelector } from "astro-i18next/components";
+import { localizePath } from "astro-i18next";
 
 const menuitems = [
   {
@@ -63,8 +65,9 @@ const menuitems = [
                 {!item.children && (
                   <li>
                     <a
-                      href={item.path}
-                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+                      href={localizePath(item.path)}
+                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+                    >
                       {item.title}
                     </a>
                   </li>
@@ -81,6 +84,10 @@ const menuitems = [
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
+        <LanguageSelector
+          showFlag={true}
+          class="language-selector bg-transparent"
+        />
         <a href="#">Log in</a>
         <Link href="#" size="md">Sign up</Link>
       </div>

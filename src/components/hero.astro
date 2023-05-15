@@ -3,10 +3,12 @@ import { Picture } from "@astrojs/image/components";
 import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
+import { t } from "i18next";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+>
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
@@ -20,8 +22,10 @@ import { Icon } from "astro-icon";
   </div>
   <div>
     <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter"
+    >
+      <!-- Marketing website done with Astro -->
+      {t("hero.title")}
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
       Astroship is a starter template for startups, marketing websites & landing
@@ -34,10 +38,12 @@ import { Icon } from "astro-icon";
         href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
         target="_blank"
         class="flex gap-1 items-center justify-center"
-        rel="noopener">
+        rel="noopener"
+      >
         <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
 
-        Download for Free
+        <!-- Download for Free -->
+        {t("hero.download")}
       </Link>
       <Link
         size="lg"
@@ -45,7 +51,8 @@ import { Icon } from "astro-icon";
         rel="noopener"
         href="https://github.com/surjithctly/astroship"
         class="flex gap-1 items-center justify-center"
-        target="_blank">
+        target="_blank"
+      >
         <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
         GitHub Repo
       </Link>

@@ -9,11 +9,17 @@ export default defineConfig({
   site: "https://astroship.web3templates.com",
   integrations: [
     tailwind(),
-    astroI18next(),
     image({
       serviceEntryPoint: "@astrojs/image/sharp",
     }),
     mdx(),
-    sitemap(),
+    sitemap({
+      i18n: {
+        defaultLocale: "en",
+        locales: { en: "en", fr: "fr", de: "de" },
+      },
+    }),
+    astroI18next(),
   ],
+  output: "server",
 });

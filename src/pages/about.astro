@@ -14,7 +14,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 });
 ---
 
-<Layout title="About">
+<Layout title={t("about.title")}>
   <Container>
     <Sectionhead>
       <Fragment slot="title">{t("about.title")}</Fragment>

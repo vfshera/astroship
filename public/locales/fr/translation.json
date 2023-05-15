@@ -1,0 +1,9 @@
+{
+  "hero": {
+    "title": "Site de marketing réalisé avec Astro",
+    "download": "Télécharger gratuitement"
+  },
+  "features": {
+    "title": "Tout ce dont vous avez besoin pour démarrer un site web"
+  }
+}

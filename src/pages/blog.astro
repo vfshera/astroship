@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import { getCollection } from "astro:content";
 import { Picture } from "@astrojs/image/components";
 import Layout from "@layouts/Layout.astro";
@@ -21,9 +21,11 @@ publishedBlogEntries.sort(function (a, b) {
 <Layout title="Blog">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="title">{t("blog.title")}</Fragment>
       <Fragment slot="desc">
-        We write about building startups and thoughts going on our mind.
+        <!-- We write about building startups and thoughts going on our mind. -->{
+          t("blog.subtitle")
+        }
       </Fragment>
     </Sectionhead>
     <main class="mt-16">
@@ -62,7 +64,8 @@ publishedBlogEntries.sort(function (a, b) {
                       <span class="text-gray-400">• </span>
                       <time
                         class="text-gray-400"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
+                        datetime={blogPostEntry.data.publishDate.toISOString()}
+                      >
                         {blogPostEntry.data.publishDate.toDateString()}
                       </time>
                     </div>

@@ -5,5 +5,46 @@
   },
   "features": {
     "title": "Everything you need to start a website"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Simple & Predictable pricing. No Surprises."
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "We are a small passionate team.",
+    "heading": "Empowering the world with Astro."
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "We write about building startups and thoughts going on our mind."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We are a here to help.",
+    "heading": "Contact Astroship",
+    "subheading": "Have something to say? We are here to help. Fill up the form or send email or call phone.",
+    "form": {
+      "name": {
+        "label": "Full Name",
+        "errors": {
+          "empty": "Please provide your full name"
+        }
+      },
+      "email": {
+        "label": "Email Address",
+        "errors": {
+          "empty": "Please provide your email address.",
+          "invalid": "Please provide your valid email address."
+        }
+      },
+      "message": {
+        "label": "Your Message",
+        "errors": {
+          "empty": "Please enter your message."
+        }
+      },
+      "submit": "Send Message"
+    }
   }
 }

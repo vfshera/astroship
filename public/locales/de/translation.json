@@ -4,6 +4,47 @@
     "download": "Kostenlos herunterladen"
   },
   "features": {
-    "title": "Alles, was Sie für den Start einer Website benötigen"
+    "title": "Alles, was Sie brauchen, um eine Website zu starten"
+  },
+  "pricing": {
+    "title": "Preisgestaltung",
+    "subtitle": "Einfache und vorhersehbare Preisgestaltung. Keine Überraschungen."
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Wir sind ein kleines leidenschaftliches Team.",
+    "heading": "Die Welt mit Astro befähigen."
+  },
+  "blog": {
+    "title": "Unser Blog",
+    "subtitle": "Wir schreiben über den Aufbau von Startups und Gedanken, die uns beschäftigen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind hier, um zu helfen.",
+    "heading": "Kontaktieren Sie Astroship",
+    "subheading": "Sie haben etwas zu sagen? Wir sind hier, um zu helfen. Füllen Sie das Formular aus oder senden Sie eine E-Mail oder rufen Sie an.",
+    "form": {
+      "name": {
+        "label": "Vollständiger Name",
+        "errors": {
+          "empty": "Bitte geben Sie Ihren vollständigen Namen an"
+        }
+      },
+      "email": {
+        "label": "E-Mail-Adresse",
+        "errors": {
+          "empty": "Bitte geben Sie Ihre E-Mail-Adresse an.",
+          "invalid": "Bitte geben Sie eine gültige E-Mail-Adresse an."
+        }
+      },
+      "message": {
+        "label": "Ihre Nachricht",
+        "errors": {
+          "empty": "Bitte geben Sie Ihre Nachricht ein."
+        }
+      },
+      "submit": "Nachricht senden"
+    }
   }
 }

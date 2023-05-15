@@ -1,9 +1,50 @@
 {
   "hero": {
-    "title": "Site de marketing réalisé avec Astro",
+    "title": "Site de marketing réalis avec Astro",
     "download": "Télécharger gratuitement"
   },
   "features": {
-    "title": "Tout ce dont vous avez besoin pour démarrer un site web"
+    "title": "Tout ce dont vous avez besoin pour créer un site web"
+  },
+  "pricing": {
+    "title": "Tarification",
+    "subtitle": "Tarification simple et prévisible. Pas de surprises."
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Nous sommes une petite équipe passionnée.",
+    "heading": "Donner du pouvoir au monde avec Astro."
+  },
+  "blog": {
+    "title": "Notre blog",
+    "subtitle": "Nous écrivons sur la création de startups et les pensées qui nous traversent l'esprit."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Nous sommes là pour vous aider.",
+    "heading": "Contactez Astroship",
+    "subheading": "Vous avez quelque chose à dire ? Nous sommes là pour vous aider. Remplissez le formulaire ou envoyez un e-mail ou appelez-nous.",
+    "form": {
+      "name": {
+        "label": "Nom complet",
+        "errors": {
+          "empty": "Veuillez fournir votre nom complet"
+        }
+      },
+      "email": {
+        "label": "Adresse e-mail",
+        "errors": {
+          "empty": "Veuillez fournir votre adresse e-mail.",
+          "invalid": "Veuillez fournir une adresse e-mail valide."
+        }
+      },
+      "message": {
+        "label": "Votre message",
+        "errors": {
+          "empty": "Veuillez entrer votre message."
+        }
+      },
+      "submit": "Envoyer le message"
+    }
   }
 }

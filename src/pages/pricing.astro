@@ -1,5 +1,5 @@
 ---
-import { changeLanguage } from "i18next";
+import { changeLanguage, t } from "i18next";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -68,16 +68,18 @@ const pricing = [
 ---
 
 <Layout title="Pricing">
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
-      <Fragment slot="desc"
-        >Simple & Predictable pricing. No Surprises.</Fragment
-      >
-    </Sectionhead>
+    <Container>
+        <Sectionhead>
+            <Fragment slot="title">{t("pricing.title")}</Fragment>
+            <Fragment slot="desc">
+                <!-- Simple & Predictable pricing. No Surprises. -->{
+                    t("pricing.subtitle")
+                }
+            </Fragment>
+        </Sectionhead>
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
-      {pricing.map((item) => <Pricing plan={item} />)}
-    </div>
-  </Container>
+        <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+            {pricing.map((item) => <Pricing plan={item} />)}
+        </div>
+    </Container>
 </Layout>

@@ -3,16 +3,14 @@ import { changeLanguage } from "i18next";
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-
 changeLanguage("en");
-
-// Generate a new path for every collection entry
+// Generate a new pathfor every collection entry
 export async function getStaticPaths() {
-    const blogEntries = await getCollection("blog");
-    return blogEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 // Get the entry directly from the prop on render
 const { entry } = Astro.props;
@@ -26,17 +24,17 @@ const { Content } = await entry.render();
         {entry.data.category}
       </span>
       <h1
-        class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
+        class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-1 lg:leading-tight"
+      >
         {entry.data.title}
       </h1>
       <div class="flex gap-2 mt-3 items-center flex-wrap md:flex-nowrap">
-        <span class="text-gray-400">
-          {entry.data.author}
-        </span>
+        <span class="text-gray-400"> {entry.data.author}</span>
         <span class="text-gray-400">•</span>
         <time
           class="text-gray-400"
-          datetime={entry.data.publishDate.toISOString()}>
+          datetime={entry.data.publishDate.toISOString()}
+        >
           {entry.data.publishDate.toDateString()}
         </time>
         <span class="text-gray-400 hidden md:block">•</span>
@@ -49,7 +47,6 @@ const { Content } = await entry.render();
         </div>
       </div>
     </div>
-
     <div class="mx-auto prose prose-lg mt-6 max-w-3xl">
       <Content />
     </div>

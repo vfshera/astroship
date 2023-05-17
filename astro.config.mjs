@@ -21,5 +21,4 @@ export default defineConfig({
     }),
     astroI18next(),
   ],
-  output: "server",
 });

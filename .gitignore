@@ -8,7 +8,7 @@ src/pages/de/
 src/pages/fr/
 # dependencies
 node_modules/
-
+*.zip
 # logs
 npm-debug.log*
 yarn-debug.log*

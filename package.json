@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "prebuild": "astro-i18next generate"
+    "postinstall": "astro-i18next generate"
   },
   "dependencies": {
     "@astrojs/image": "^0.14.1",
